@@ -149,15 +149,39 @@ const CARD_REGISTRY = {
   'intro': { title: 'Introduction', color: 'orange', grow: true, body: (<>
     <p>Epilepsy is a dynamic network disorder in which recurrent seizures progressively reshape brain-wide structure, connectivity, and the balance between excitation and inhibition (E/I). Repeated seizures trigger long-lasting neuroplastic changes (Wang et al., 2025), destabilize local and global functional organization (Barrios-Martinez et al., 2025), and increase vulnerability to subsequent events (Liang et al., 2020). Disruptions in E/I balance are considered a central hallmark of epileptogenesis (Liu et al., 2023), reflected in alterations in the Hurst exponent in chronic temporal lobe epilepsy (Xie et al., 2024), dynamic E/I fluctuations across seizure phases (Žiburkus et al., 2013), and seizure-induced strengthening of excitatory synapses via BDNF signalling (Nasrallah et al., 2022). However, how E/I balance evolves across seizure stages and grades remains poorly understood, particularly in humans, where ethical constraints and anti-epileptic drugs (AEDs) obscure intrinsic circuit dy...</p>
   </>), },
-  'method': { title: 'Method', color: 'green', grow: true, body: (<>
-    <p>Using a chronic epileptic Lafora disease (Epm2a−/−) mouse model, we tracked how network-level E/I balance evolves across epileptogenesis and ictogenesis using the aperiodic exponent, a noninvasive EEG proxy for E/I ratio and beta-band oscillatory metrics.</p>
-  </>), },
-  'results': { title: 'Results', color: 'purple', grow: true, body: (<>
-    <p>Laforin deficient Lafora disease mice exhibited steeper baseline aperiodic slopes and elevated beta activity, indicating increased tonic inhibition. Isoflurane produced stronger spectral slope steepening in wild-type animals. Aperiodic measures showed systematic variation across pre-ictal, ictal, and post-ictal periods.</p>
-  </>), },
-  'conclusion': { title: 'Conclusion', color: 'red', grow: true, body: (<>
-    <p>These results suggest that cortical E/I balance varies dynamically across seizure phases and severity. By resolving these transitions in real time, aperiodic EEG features offer a promising biomarker for seizure staging and vulnerability assessment.</p>
-  </>), },
+  'method': { title: 'Method', color: 'green', grow: true, body: (
+    <>
+      <div className="fig">
+        <div className="fig-wrap"><img src="image1.png" alt="Methodology Figure" style={{width: '100%', height: '100%', objectFit: 'contain'}} /></div>
+        <div className="cap"><b>Figure 1: E/I balance and aperiodic exponents.</b> Tracking network-level E/I balance across epileptogenesis and ictogenesis using the aperiodic exponent.</div>
+      </div>
+      <p>Using a chronic epileptic Lafora disease (Epm2a−/−) mouse model, we tracked how network-level E/I balance evolves across epileptogenesis and ictogenesis using the aperiodic exponent, a noninvasive EEG proxy for E/I ratio and beta-band oscillatory metrics.</p>
+    </>
+  ), },
+  'results': { title: 'Results', color: 'purple', grow: true, body: (
+    <>
+      <p>Laforin deficient Lafora disease mice exhibited steeper baseline aperiodic slopes and elevated beta activity, indicating increased tonic inhibition. Isoflurane produced stronger spectral slope steepening in wild-type animals. Aperiodic measures showed systematic variation across pre-ictal, ictal, and post-ictal periods.</p>
+
+      <div className="fig">
+        <div className="fig-wrap"><img src="image2.png" alt="Results Figure 2" style={{width: '100%', height: '100%', objectFit: 'contain'}} /></div>
+        <div className="cap"><b>Figure 2: Aperiodic slopes and beta activity.</b> Baseline characteristics in Laforin deficient mice compared to wild-type.</div>
+      </div>
+
+      <div className="fig" style={{marginTop: '20px'}}>
+        <div className="fig-wrap"><img src="image3.png" alt="Results Figure 3" style={{width: '100%', height: '100%', objectFit: 'contain'}} /></div>
+        <div className="cap"><b>Figure 3: Pharmacological effects.</b> Effects of Isoflurane on spectral slope steepening in wild-type vs knockouts.</div>
+      </div>
+    </>
+  ), },
+  'conclusion': { title: 'Conclusion', color: 'red', grow: true, body: (
+    <>
+      <div className="fig">
+        <div className="fig-wrap"><img src="image4.png" alt="Conclusion Figure" style={{width: '100%', height: '100%', objectFit: 'contain'}} /></div>
+        <div className="cap"><b>Figure 4: Seizure phases.</b> Systematic variation of aperiodic measures across pre-ictal, ictal, and post-ictal periods.</div>
+      </div>
+      <p>These results suggest that cortical E/I balance varies dynamically across seizure phases and severity. By resolving these transitions in real time, aperiodic EEG features offer a promising biomarker for seizure staging and vulnerability assessment.</p>
+    </>
+  ), },
 };
 
 /* ================================================================
